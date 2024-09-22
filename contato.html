@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Deixe seu feedback!</title>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta name = "author" content = "Bruno Guimarães">
+        <meta name = "description" content = "Rayssa Leal nas olímpiadas de Paris 2024">
+        <meta name = "keywords" content = "Paris, Olímpiadas, Skate, Rayssa Leal, 2024">
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="icon" type="image/png" href="data/logo.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <h1><img src="data/logo.png"></h1>
+            <ul id="nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="destaque.html">DESTAQUE</a></li>
+                <li><a href="desafios.html">DESAFIOS</a></li>
+                <li><a href="medalhas.html">MEDALHAS</a></li>
+                <li><a href="contato.html" class="ativa">CONTATO</a></li>
+            </ul>
+        </div>      
+        <div id="section6">
+            <h1>DEIXE SEU FEEDBACK</h1>
+            <form class="form1" name="form1" method="get" action="enviodedados.html">
+                Nome: <input type="text" name="nome" placeholder="Coloque seu nome"><br><br>
+                Email: <input type="email" name="gmail" placeholder="Coloque seu email"><br><br>
+                Nota: <select name="nota">
+                    <option value="">Selecione uma Nota</option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                 </select><br><br>
+                Data: <input type="date" name="data"><br><br>
+                <textarea cols="25" rows="10" placeholder="deixe seu comentário!!!!!"></textarea><br><br>
+                <input type="submit" value="ENVIAR" onclick="return validar()">
+                <input type="reset" value="LIMPAR">
+            </form>
+        </div>
+        <div id="footer">
+            <p>Bruno Guimarães - 2024 &copyTodos os direitos reservados<br>
+            Trabalho acadêmico sem fins lucrativos</p>
+        </div>
+    </body>
+</html>
